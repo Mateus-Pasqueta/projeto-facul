@@ -1,0 +1,17 @@
+.menu-items {
+    display: flex; 
+    justify-content: center;
+    padding-top: 10rem;
+    gap: 10rem;
+}
+
+.menu-img {
+    max-width: 13rem;
+    max-height: 13rem;
+    border-radius: 100px;
+    transition: all 0.2s linear;
+}
+
+.menu-img:hover {
+    transform: scale(1.1);
+}

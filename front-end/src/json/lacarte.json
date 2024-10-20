@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1 ,
+        "nome": "Uramaki Dragão",
+        "preco": 22.99,
+        "imagem": "https://media-cdn.tripadvisor.com/media/photo-s/0e/d9/39/10/uramaki-dragon-roll.jpg"
+    },
+    {
+        "id": 2 ,
+        "nome": "Sashimi Salmão",
+        "preco": 20.99,
+        "imagem": "https://images.tcdn.com.br/img/img_prod/842178/salmao_fresco_fatiado_tipo_sashimi_77_1_20200903170409.jpg"
+    },
+    {
+        "id": 3 ,
+        "nome": "Temaki Vegetariano",
+        "preco": 19.99,
+        "imagem": "https://presuntovegetariano.com.br/wp-content/uploads/2014/07/IMG_6126Thumb.jpg"
+    },
+    {
+        "id": 4 ,
+        "nome": "Hot Roll Skin",
+        "preco": 18.99,
+        "imagem": "https://supliutech.nyc3.cdn.digitaloceanspaces.com/catalogoapp-aws/2019-05-21/UK1my5gAUKA1qp9ZHIm4UwOpsAV1Xcz6n9Trvbnr.jpg"
+    },
+    {
+        "id": 5 ,
+        "nome": "Nigiri Ouriço do Mar",
+        "preco": 25.99,
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvBV0bPZU0iUn3mKEyIvsA9XWORekI1-Ot_A&s"
+    },
+    {
+        "id": 6 ,
+        "nome": "Hosomaki Pepino e Cream Cheese",
+        "preco": 14.99,
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfPgTeW0ARyRSMCBxj3qnTBVvt_ujwd46Tgw&s"
+    },
+    {
+        "id": 7 ,
+        "nome": "Uramaki Rainbow",
+        "preco": 24.99,
+        "imagem": "https://as1.ftcdn.net/v2/jpg/04/70/07/26/1000_F_470072646_D5GI5zhiAmFT6zqN8qUpA7D3h2VjNXI6.jpg"
+    },
+    {
+        "id": 8 ,
+        "nome": "Sashimi Peixe Branco",
+        "preco": 22.99,
+        "imagem": "https://malumarpescados.com.br/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/s/a/sashimi_peixe_branco.png"
+    },
+    {
+        "id": 9 ,
+        "nome": "Temaki Atum",
+        "preco": 23.99,
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQErvMxLUe7m6T54joEtxCW0-KxuMAIsY5pw&s"
+    },
+    {
+        "id": 10 ,
+        "nome": "Hot Roll Camarão Empanado",
+        "preco": 21.99,
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCzOWupv8v1khh_9C3soq_mvh4z2yE1V__BA&s"
+    },
+    {
+        "id": 11 ,
+        "nome": "Nigiri Enguia",
+        "preco": 19.99,
+        "imagem": "https://www.coisasdojapao.com/wp-content/uploads/2019/02/nigiri-unagi_opt.jpg"
+    },
+    {
+        "id": 12 ,
+        "nome": "Hosomaki Ouriço do Mar",
+        "preco": 28.99,
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJJi8fED4rF0jWM4ZyYFhN57caYSPbeVy2eg&s"
+    }
+]

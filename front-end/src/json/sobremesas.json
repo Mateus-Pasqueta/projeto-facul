@@ -1,0 +1,50 @@
+[
+    {
+      "nome": "Bolo de Chocolate",
+      "id": 1,
+      "imagem": "https://static.itdg.com.br/images/1200-630/bd14ed0d98530fb34b6f60a295382a7a/348000-original.jpg",
+      "preco": 15.99
+    },
+    {
+      "nome": "Mousse de Maracujá",
+      "id": 2,
+      "imagem": "https://static.itdg.com.br/images/360-240/8fed8f60d3c8e3990396e2478cbc7f2a/shutterstock-1905617575-1-.jpg",
+      "preco": 12.99
+    },
+    {
+      "nome": "Tiramisu",
+      "id": 3,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPuUYezY0jRiLdMVNOsG00PuOZCL9OC2aONQ&s",
+      "preco": 18.99
+    },
+    {
+      "nome": "Torta de Limão",
+      "id": 4,
+      "imagem": "https://catracalivre.com.br/wp-content/uploads/2022/03/img-8977.jpg",
+      "preco": 14.99
+    },
+    {
+      "nome": "Brownie com Sorvete",
+      "id": 5,
+      "imagem": "https://www.specialita.com/wp-content/uploads/2022/07/brownie-de-chocoavela-com-sorvete.jpg",
+      "preco": 16.99
+    },
+    {
+      "nome": "Cheesecake",
+      "id": 6,
+      "imagem": "https://www.receitasnestle.com.br/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/8fafc3935c766bf8c9f1331a325e48a9.jpg?itok=qsQFIVyp",
+      "preco": 20.99
+    },
+    {
+      "nome": "Petit Gateau",
+      "id": 7,
+      "imagem": "https://s2-receitas.glbimg.com/PSo7shjUPc3x5w_8zMTj3J4ZrEM=/0x0:1280x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/E/p/KwxNhgRFSwV6vTBCzmqA/petit-gateau.jpg",
+      "preco": 13.99
+    },
+    {
+      "nome": "Macarons",
+      "id": 8,
+      "imagem": "https://www.patipiva.com.br/wp-content/uploads/2021/08/macarons-3.jpg",
+      "preco": 19.99
+    }
+  ]

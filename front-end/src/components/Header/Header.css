@@ -1,0 +1,84 @@
+.cabecalho {
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #60441b;
+    height: 10vh;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 32px;
+    color: white;
+}
+
+
+.img-cabecalho {
+    display: none;
+}
+
+.img-cabecalho-on {
+    display: block;
+}
+
+.img-cabecalho-on img {
+    max-height: 4rem;
+}
+
+.conta {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-link {
+    text-decoration: none;
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 20px;
+    color: #60441b;
+    font-weight: bold;
+}
+
+.conta:hover {
+    transform: scale(1.1);
+}
+
+.cart__button {
+    font-size: 2rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.cart__on {
+    display: flex;
+}
+
+.cart__status {
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
