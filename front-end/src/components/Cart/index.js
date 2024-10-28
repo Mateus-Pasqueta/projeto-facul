@@ -1,22 +1,27 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import CartItem from "../CartItem";
 import "./Cart.css"
 import AppContext from "../../context/AppContext";
-import formatCurrency from "../../utils/formatCurrency";
 
 const Cart = () => {
     const { cartItems, cartVisible } = useContext(AppContext);
 
-    const totalPrice = cartItems.reduce((acc, item) => {
-        return item.preco + acc
-    }, 0);  
+    const [totalPrice, setTotalPrice] = useState(0);  
+
+    useEffect(() => {
+        const total = cartItems.reduce((acc, item) => {
+            return acc + item.preco * item.quantidade;
+        }, 0);
+        setTotalPrice(total);
+    }, [cartItems]);
 
     return (
         <section className={`cart ${cartVisible ? "cart__active" : ""}`}>
             <div className="cart-items">
-                {cartItems.map((item) => <CartItem key={item.id} img={item.img} titulo={item.children} preco={item.preco} />)}
+                {cartItems.map((item) => <CartItem id={item.id} img={item.img} titulo={item.nome} preco={item.preco} quantidade={item.quantidade}/>)}
             </div>
-            <div className="cart-resume">{formatCurrency(totalPrice)}</div>
+            {console.log(totalPrice)}
+            <div className="cart-resume">R${Number(totalPrice).toFixed(2)}</div>
         </section>
     )
 };

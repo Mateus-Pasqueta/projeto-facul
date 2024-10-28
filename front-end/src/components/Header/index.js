@@ -19,7 +19,7 @@ const Header = () => {
                 <h1 className="titulo">{`${local.pathname === "/" ? "Bem-vindo" : ""}`}</h1>
             </div>
             <div>
-                <button onClick={() => setCartVisible(!cartVisible)} className={`cart__button ${local.pathname === "/admin" ? "" : "cart__on"}`}>
+                <button onClick={() => setCartVisible(!cartVisible)} className={`cart__button ${local.pathname === "/admin/*" ? "" : "cart__on"}`}>
                     <CiShoppingCart />
                     {cartItems.length > 0 && <span className="cart__status">{cartItems.length}</span>}
                 </button>

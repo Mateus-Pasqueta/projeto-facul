@@ -1,0 +1,10 @@
+.Cards-api {
+    background-color: antiquewhite;
+    height: 90.2vh;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem 6rem;
+    overflow: auto;
+    padding-left: 20rem;
+}

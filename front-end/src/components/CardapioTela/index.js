@@ -2,7 +2,7 @@ import "./CardapioTela.css";
 import Navegacao from "../Navegacao";
 import Card from "../Cards";
 
-const CardapioTela = ({pratos}) => {
+const CardapioTela = ({ pratos }) => {
 
     return (
         <main className="main__container">
@@ -16,7 +16,7 @@ const CardapioTela = ({pratos}) => {
                 </ul>
             </nav>
             <section className="menu">
-                {pratos.map((prato) => <Card id={prato.id} preco={prato.preco} img={prato.imagem}>{prato.nome}</Card>)}
+                {pratos.map((prato) => <Card id={prato.id} preco={prato.preco} img={prato.img}>{prato.nome}</Card>)}
             </section>
         </main >
     )

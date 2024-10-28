@@ -1,29 +1,43 @@
 import { useContext } from "react";
 import "./Cards.css";
 import AppContext from "../../context/AppContext";
-import formatCurrency from "../../utils/formatCurrency";
 
 const Card = ( props ) => {
-
-    const { id, img, textoAlt, children, preco} = props
 
     const { cartItems, setCartItems } = useContext(AppContext);
     
     const handleAddCart = () => {
-        setCartItems([...cartItems, props]);
+
+        const itemExists = cartItems.some((item) => item.id === props.id);
+
+        if (!itemExists) {
+            setCartItems([
+                ...cartItems,{
+                    id: props.id,
+                    img: props.img,
+                    textoAlt: props.textoAlt,
+                    preco: props.preco,
+                    name: props.children,
+                    quantidade: 1, 
+                },
+            ]);
+        } else {
+            alert("Item já está no carrinho!");
+        }
     }
+    
 
     return(
-        <div key={id} className="card">
+        <div className="card">
             <div className="card-img">
-                <img src={img} alt={textoAlt}/> 
+                <img src={props.img} alt={props.textoAlt}/> 
             </div>
             <div className="card-titulo">
-                <h3>{children}</h3>
-                <p>{formatCurrency(preco)}</p>
+                <h3>{props.children}</h3>
+                <p>R${Number(props.preco).toFixed(2)}</p>
                 <button 
                 className="btn"
-                onClick={ handleAddCart }
+                onClick={handleAddCart}
                 >Pedir</button>
             </div>
         </div>

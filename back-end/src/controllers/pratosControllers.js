@@ -1,15 +1,20 @@
 import db from "../config/database.js";
 
 const createPlate = async (req, res) => {
-  const { plate_name, price, img } = req.body;
+  const { nome, preco, img } = req.body;
+  if(!nome){
+    res.status(400).send({
+      message: "nome vazio"
+    })
+  }
   const [ results, fields ] = await db.query(
     "INSERT INTO plates (nome, preco, img) VALUES (?, ?, ?)",
-    [plate_name, price, img]
+    [nome, preco, img]
   );
   res.status(201).send({
     message: "Product added successfully!",
     body: {
-      plate: { plate_name, price, img }
+      plate: { nome, preco, img }
     }
   });
 
