@@ -32,6 +32,24 @@
     padding: 0 35px 0 10px;
 }
 
+.quatity__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity__button {
+    width: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #60441b;
+}
+
 .button__delete {
     position: absolute;
     top: 0;

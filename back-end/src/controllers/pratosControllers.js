@@ -43,6 +43,19 @@ const updatePlateById = async (req, res) => {
 
 const deletePlateById = async (req, res) => {
     const plateId = parseInt(req.params.id);
+
+    const [ results ] = await db.query('SELECT * FROM orders_plates WHERE plate_id IN (?)',
+      [plateId]
+    );
+
+    const orderId = results[0].order_id;
+
+    if(results.length === 1){
+      await db.query('DELETE FROM orders WHERE id = ? ', [
+          orderId
+      ]);
+    }
+
     await db.query('DELETE FROM plates WHERE id = ?', [
       plateId
     ]);

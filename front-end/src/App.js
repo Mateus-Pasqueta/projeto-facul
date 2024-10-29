@@ -15,6 +15,7 @@ import Ctrl from "./views/Ctrl";
 import CtrlAddPlate from "./components/CtrlAddPlate";
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from './context/ProtectedRoute';
+import Kitchen from "./views/Kitchen";
 
 function App() {
   return (
@@ -44,6 +45,11 @@ function App() {
             <Route path="/admin/control/addPlate/:id" element={
               <ProtectedRoute>
                 <CtrlAddPlate />
+              </ProtectedRoute>
+              } />
+            <Route path="/admin/kitchen" element={
+              <ProtectedRoute>
+                <Kitchen />
               </ProtectedRoute>
               } />
           </Routes>

@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 const CardCtrl = () => {
   const { plateList, setPlateList } = useContext(AppContext);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  console.log(plateList);
 
   const fetchPlates = useCallback( async () => {
     const platesApi = await getCards();

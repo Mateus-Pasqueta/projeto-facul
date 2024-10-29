@@ -3,6 +3,7 @@ import cors from "cors";
 import pratosRoute from "./routes/pratosRoutes.js";
 import loginRoute from "./routes/loginRoutes.js";
 import { tokenValited } from "./config/auth.js";
+import ordersRoutes from "./routes/ordersRoutes.js";
 
 const app = express();
 
@@ -16,5 +17,6 @@ app.use("/api/plates/*", tokenValited);
 app.use("/api/newPlate", tokenValited);
 app.use('/api', pratosRoute);
 app.use('/api', loginRoute);
+app.use('/api', ordersRoutes);
 
 export default app;

@@ -15,6 +15,9 @@ const CtrlCardapio = () => {
                         <li className="funcoes">
                             <Link className="nav-item" to="/admin/control/addPlate">adicionar prato</Link>
                         </li>
+                        <li className="funcoes">
+                            <Link className="nav-item" to="/admin/kitchen">Cozinha</Link>
+                        </li>
                     </div>
                 </nav>
         </aside>

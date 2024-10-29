@@ -10,7 +10,6 @@ const CartItem = (props) => {
     
     const handleRemove = (id) => {
         const updatedItems = cartItems.filter((item) => item.id !== id)
-        debugger
         setCartItems(updatedItems);
     };
 
@@ -38,10 +37,10 @@ const CartItem = (props) => {
             <div className="cart__item__content">
                 <h3 className="cart__item__title">{titulo}</h3>
                 <h3 className="cart__item__price">R${Number(preco).toFixed(2)};</h3>
-                <div>
-                    <button className="less__button" onClick={removeQuantity}>-</button>
+                <div className="quatity__box">
+                    <button className="quantity__button" onClick={removeQuantity}>-</button>
                     <span>{quantidade}</span>
-                    <button className="add__button" onClick={addQuantity}>+</button>
+                    <button className="quantity__button" onClick={addQuantity}>+</button>
                 </div>
                 <button onClick={() => handleRemove(id)} type="button" className="button__delete"><MdDelete /></button>
             </div>

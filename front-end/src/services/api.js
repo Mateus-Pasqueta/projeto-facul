@@ -54,11 +54,51 @@ const deletePlate = async (id) => {
     return response.message
 }
 
+const getOrders = async () => {
+    const response = await api.get('/orders');
+    
+    return response.data;
+}
+
+const addOrder = async (data) => {
+    const token = localStorage.getItem("token");
+    const response = await api.post('/newOrder', data, {
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+        }
+    })
+    
+    return response.data;
+}
+
+const updateOrder = async (data) => {
+    const token = localStorage.getItem("token");
+    const response = await api.put(`/orders/${data.id}`, data, {
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+        }
+    })
+    
+    return response;
+}
+
+const getOrderById = async (id) => {
+    const response = await api.get(`/orders/${id}`);
+    
+    return response.data;
+}
+    
 
 export {
     getCards,
     login,
     addPlate,
     deletePlate,
-    updatePlate
+    updatePlate,
+    getOrders,
+    addOrder,
+    updateOrder,
+    getOrderById
 }
