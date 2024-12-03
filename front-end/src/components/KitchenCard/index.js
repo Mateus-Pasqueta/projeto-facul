@@ -46,7 +46,7 @@ const KitchenCard = () => {
 
   return (
     <>
-      <ul>
+      <ul className="Kitchen__card">
         {orders?.map((order) => (
           <>
             <h3>Mesa {order?.mesa}</h3>

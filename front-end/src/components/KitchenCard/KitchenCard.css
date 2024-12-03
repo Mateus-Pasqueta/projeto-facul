@@ -3,10 +3,10 @@
     height: 23rem;
     background-color: rgb(253, 231, 202);
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
-    margin: 1rem 1rem;
+    margin: 5rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
     padding: 2rem 0;
     align-items: center;
     text-align: center;
