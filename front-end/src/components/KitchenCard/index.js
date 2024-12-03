@@ -49,8 +49,8 @@ const KitchenCard = () => {
       <ul>
         {orders?.map((order) => (
           <>
-            <h3>Mesa: {order?.mesa}</h3>
-            <p>pratos: </p>
+            <h3>Mesa {order?.mesa}</h3>
+            <p>Pedidos  : </p>
             <ul>
               {order?.pratos.map((prato) => (
                 <li>

@@ -43,11 +43,15 @@ const updatePlateById = async (req, res) => {
 
 const deletePlateById = async (req, res) => {
     const plateId = parseInt(req.params.id);
+    
+    await db.query('DELETE FROM plates WHERE id = ?', [
+      plateId
+    ]);
 
     const [ results ] = await db.query('SELECT * FROM orders_plates WHERE plate_id IN (?)',
       [plateId]
     );
-
+    
     const orderId = results[0].order_id;
 
     if(results.length === 1){
@@ -56,9 +60,6 @@ const deletePlateById = async (req, res) => {
       ]);
     }
 
-    await db.query('DELETE FROM plates WHERE id = ?', [
-      plateId
-    ]);
     res.status(200).send({ message: 'Product deleted successfully!', plateId });
 };
 

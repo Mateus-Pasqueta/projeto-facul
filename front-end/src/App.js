@@ -6,10 +6,6 @@ import Menu from "./views/Menu";
 import Cart from "./components/Cart";
 import Provider from "./context/Provider";
 import LaCarte from "./views/LaCarte";
-import Lanches from "./views/Lanches";
-import Pastas from "./views/Pastas";
-import Bebidas from "./views/Bebidas";
-import Sobremesas from "./views/Sobremesas";
 import Admin from "./views/Admin";
 import Ctrl from "./views/Ctrl";
 import CtrlAddPlate from "./components/CtrlAddPlate";
@@ -28,10 +24,6 @@ function App() {
             <Route path="/" element={<Inicio />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/lacarte" element={<LaCarte />} />
-            <Route path="/lanches" element={<Lanches />} />
-            <Route path="/pasta" element={<Pastas />} />
-            <Route path="/bebidas" element={<Bebidas />} />
-            <Route path="/sobremesas" element={<Sobremesas />} />
             <Route path="/admin" element={ <Admin />} />
             <Route path="/admin/control" element={
               <ProtectedRoute>

@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 const CardCtrl = () => {
   const { plateList, setPlateList } = useContext(AppContext);
   const navigate = useNavigate();
-  console.log(plateList);
 
   const fetchPlates = useCallback( async () => {
     const platesApi = await getCards();
@@ -19,10 +18,8 @@ const CardCtrl = () => {
   }, [fetchPlates]);
 
   const removePlate = (id) => {
-    deletePlate(id).then(response => {
-      console.log(response);
-    })
-    window.location.reload();
+      deletePlate(id).then(response => console.log(response))
+      window.location.reload();
     return
   };
 

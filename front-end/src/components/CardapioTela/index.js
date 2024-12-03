@@ -9,10 +9,6 @@ const CardapioTela = ({ pratos }) => {
             <nav className="nav-bar">
                 <ul>
                     <Navegacao key='1' to="/lacarte">La carte</Navegacao>
-                    <Navegacao key='2' to="/lanches">Lanches</Navegacao>
-                    <Navegacao key='3' to="/pasta">Pasta</Navegacao>
-                    <Navegacao key='4' to="/bebidas">Bebidas</Navegacao>
-                    <Navegacao key='5' to="/sobremesas">Sobremesas</Navegacao>
                 </ul>
             </nav>
             <section className="menu">

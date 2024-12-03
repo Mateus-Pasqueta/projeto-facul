@@ -13,6 +13,7 @@
     height: 9.8rem;
     width: 100%;
     border-radius: 10px;
+    cursor: not-allowed;
 }
 
 .card-titulo {
@@ -31,6 +32,9 @@
     font-size: 20px;
 }
 
+@media screen {
+    
+}
 
 .btn {
     background-color: #60441b;

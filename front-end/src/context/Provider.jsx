@@ -12,7 +12,7 @@ const Provider = ({ children }) => {
     setCartItems,
     cartVisible,
     setCartVisible,
-    plateList,
+    plateList,   
     setPlateList,
   };
 
